@@ -1,0 +1,195 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+
+*{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    background-color: hsl(0, 0%, 94%);
+}
+   
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 30px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 15px;    
+    border-bottom-right-radius: 100px;
+} 
+.form{
+    display: flex;
+    gap: 10px;
+}
+.form p{
+    display: none;
+}
+input{
+    height: 40px;
+    width: 95px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    transition: 300ms;
+}
+input:hover{
+    height: 40px;
+    width: 95px;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+label{
+    font-size: 8px;
+    font-weight: 700;
+    color:hsl(0, 1%, 44%);
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+/* media for large screen */
+@media  screen and (min-width:376px) {
+
+
+.hr_btn{
+    display: flex;
+    align-items: center;
+}
+hr{
+    width:85%;
+    color: hsl(0, 0%, 94%)
+}
+.btn{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: hsl(259, 100%, 65%);
+    border: 0;
+    padding: 10px;
+    transition: 500ms;
+}
+.btn svg{
+    width: 30px;
+    height: 30px;
+}
+.results{
+
+    font-size: 64px;
+    font-weight: 900;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+}
+.res span{
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1px;   
+}
+
+.btn:hover{
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    cursor: pointer;
+}
+}
+/*media for small screen 375px*/
+@media  screen and (max-width:375px) {
+   
+    .hr_btn{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 55px;
+    }
+    hr{
+        width:100%;
+        color:  hsl(0, 0%, 94%);
+    }
+    .btn{
+        position:absolute;
+        left: 122.5px;
+        right: 122.5px;
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        background-color: hsl(259, 100%, 65%);
+        border: 0;
+        padding: 10px;
+        transition: 500ms;
+    }
+    .btn svg{
+        width: 30px;
+        height: 30px;
+    }
+    .results{
+    
+        font-size: 54px;
+        font-weight: 900;
+        font-style: italic;
+        color: hsl(0, 0%, 8%);
+    }
+    .res span{
+        color: hsl(259, 100%, 65%);
+        letter-spacing: 1px;   
+    }
+    
+.btn:hover{
+    background-color: hsl(0, 0%, 8%);
+    position:absolute;
+    left: 122.5px;
+    right: 122.5px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border: 0;
+    cursor: pointer;
+}
+    }  
+
+.err{
+    display: flex;
+    gap: 10px;
+}
+
+.err label {
+    font-size: 8px;
+    font-weight: 700;
+    color:hsl(0, 100%, 67%);
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+.err input{
+    height: 40px;
+    width: 95px;
+    border: 1px solid hsl(0, 100%, 67%) ;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px; 
+}
+.err p{
+    display: block;
+    margin: 5px;
+    font-size: 8px;
+    font-weight: 700;
+    color:hsl(0, 100%, 67%);
+}

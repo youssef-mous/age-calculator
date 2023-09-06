@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <div class="card">
+    
+    <div class="form " id="test" >
+
+      <div class="item1">
+          <Label for="day">Day</Label><br>
+          <input type="number" id="day" min="1" max="31" placeholder="DD">
+          <p id="d"></p>
+      </div>
+
+      <div class="item2">
+          <Label for="month">Month</Label><br>
+          <input type="number" id="month" min="1" max="12" placeholder="MM">
+          <p id="m"></p>
+      </div>
+
+      <div class="item3">
+          <Label for="year">Year</Label><br>
+          <input type="number" id="year" min="1" placeholder="YYYY">
+          <p id="y"></p>
+      </div>
+
+    </div>
+    <div class="hr_btn">
+        <hr>
+        <button class="btn" onclick="btnHandler()"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+          <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+          </g>
+              </svg>
+        </button>
+    </div>
+    <div class="results">
+          <div class="res"><span id="res_y">--</span>years</div>
+          <div class="res"><span id="res_m">--</span>months</div> 
+          <div class="res" ><span id="res_d">--</span>days</div>    
+    </div>
+  </div> 
+ 
+</body>
+</html>
